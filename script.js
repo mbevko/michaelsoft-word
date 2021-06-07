@@ -100,3 +100,17 @@ sideBar.addEventListener('mouseenter', () => {
 sideBar.addEventListener('mouseleave', () => {
  sideBar.style.transform = "translateX(250px)";
 });
+
+//sidebar arrow animation
+
+document.querySelector(".sum_one").addEventListener('click', () => {
+  document.querySelector(".one").classList.toggle("up")
+})
+
+document.querySelector(".sum_two").addEventListener('click', () => {
+  document.querySelector(".two").classList.toggle("up")
+})
+
+document.querySelector(".sum_three").addEventListener('click', () => {
+  document.querySelector(".three").classList.toggle("up")
+})
