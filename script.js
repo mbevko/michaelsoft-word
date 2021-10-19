@@ -123,3 +123,16 @@ clearMode.addEventListener('click', () => {
   document.querySelector(".stats").classList.toggle("stats_clear")
   document.querySelector(".app_title").classList.toggle("app_title_clear")
 });
+
+//light/dark mode
+
+//sidebar, body, #dee4e7
+//text color, title,  bottom. 
+
+document.querySelector(".light_mode").addEventListener('click', () => {
+  document.querySelector(".app_body").classList.toggle("app_body_light");
+  document.querySelector(".switch").classList.toggle("switch_off");
+  
+});
+
+//colors fly past with a coat of dark

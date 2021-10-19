@@ -19,9 +19,11 @@
     border-radius: 20px;
   }
   
-  section {
+  .app_body {
     display: flex;
     flex-direction: row; 
+    background-color: #1E1E1E;
+    transition: 1s;
   }
   
   .sidebar {
@@ -115,8 +117,6 @@
   .box_one {
     width: 100vw;
     height: 100vh;
-    padding-left: 20px;
-    background: #1E1E1E;
     z-index: 1;
   }
   
@@ -132,7 +132,7 @@
     width: 1000px;
     height: 73vh;
     display: block;
-    background: #1E1E1E;
+    background: none;
     font-family: sans-serif;
     color: white;
     padding: 15px;
@@ -209,3 +209,41 @@
     color: black;
     background:rgb(45, 66, 90);
   }
+
+/*----------------------- LIGHT/DARK MODE --------------------------------- */
+
+.light_mode {
+  border: none;
+  margin: auto auto 100px auto;
+  cursor: pointer;
+  width: 80px;
+  height: 35px;
+  border-radius: 30px;
+  background:rgb(45, 66, 90);
+}
+
+.switch {
+  height: 30px;
+  width: 30px;
+  border-radius: 30px;
+  background: rgb(221, 255, 252);
+  padding: 0;
+  margin: 0;
+  transition: 1s;
+}
+
+.switch_off {
+  height: 30px;
+  width: 30px;
+  border-radius: 30px;
+  background: rgb(221, 255, 252);
+  transform: translateX(38px);
+  transition: 1s;
+}
+
+.app_body_light {
+  background: #dee4e7;
+  transition: 1s;
+  padding: 0;
+}
+
