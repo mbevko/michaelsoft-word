@@ -120,11 +120,12 @@
     z-index: 1;
   }
   
-  .box_one h1 {
+  .app_title {
     color: silver;
     font-family: 'Roboto', sans-serif;
     font-size: 20pt;
     text-align: center;
+    transition: .3s;
   }
   
   textarea {
@@ -151,6 +152,7 @@
     height: 100px;
     position: fixed;
     bottom: 0;
+    transition: .3s;
   }
   
   .count {
@@ -178,4 +180,32 @@
     top: 0;
     right: 0;
     pointer-events: initial;
+  }
+
+  /*----------------------- CLEAR MODE --------------------------------- */
+
+  .stats_clear {
+    transform: translateY(200px);
+    transition: .3s;
+  }
+
+  .app_title_clear {
+    transform: translateY(-200px);
+    transition: .3s;
+  }
+
+  .clear_mode {
+    background: none;
+    height: 40px;
+    border: none;
+    color: rgb(86, 127, 173);
+    cursor: pointer;
+    font-size: 13pt;
+    margin-top: 5px;
+    transition: 1s;
+  }
+
+  .clear_mode:hover {
+    color: black;
+    background:rgb(45, 66, 90);
   }

@@ -114,3 +114,12 @@ document.querySelector(".sum_two").addEventListener('click', () => {
 document.querySelector(".sum_three").addEventListener('click', () => {
   document.querySelector(".three").classList.toggle("up")
 })
+
+//clear mode
+
+let clearMode = document.querySelector(".clear_mode");
+
+clearMode.addEventListener('click', () => {
+  document.querySelector(".stats").classList.toggle("stats_clear")
+  document.querySelector(".app_title").classList.toggle("app_title_clear")
+});
