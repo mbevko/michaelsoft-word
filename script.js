@@ -118,10 +118,11 @@ document.querySelector(".sum_three").addEventListener('click', () => {
 //clear mode
 
 let clearMode = document.querySelector(".clear_mode");
+let appTitle = document.querySelector(".app_title");
 
 clearMode.addEventListener('click', () => {
   document.querySelector(".stats").classList.toggle("stats_clear")
-  document.querySelector(".app_title").classList.toggle("app_title_clear")
+  appTitle.classList.toggle("app_title_clear")
 });
 
 //light/dark mode
@@ -129,9 +130,15 @@ clearMode.addEventListener('click', () => {
 //sidebar, body, #dee4e7
 //text color, title,  bottom. 
 
+let statCount = document.querySelectorAll(".stats .count_p");
+
 document.querySelector(".light_mode").addEventListener('click', () => {
+  
   document.querySelector(".app_body").classList.toggle("app_body_light");
   document.querySelector(".switch").classList.toggle("switch_off");
+  statCount.forEach(item => item.classList.toggle("count_p_light"))
+  textArea.classList.toggle("textarea_light");
+  appTitle.classList.toggle("app_title_light")
   
 });
 

@@ -247,3 +247,18 @@
   padding: 0;
 }
 
+.textarea_light {
+  color: black;
+}
+
+.app_title_light {
+  color: rgb(155, 155, 155);
+}
+
+img {
+  margin: auto;
+}
+
+.count_p_light {
+  color: rgb(155, 155, 155);
+}
