@@ -19,7 +19,6 @@ characterNumber.innerText = '0';
 wordNumber.innerText = '0';
 sentenceNumber.innerText = '0';
 
-
 const processor = () => {
   //variables
   let words = documentText.value;
