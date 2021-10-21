@@ -1,13 +1,13 @@
 //ADD:
-//clean mode --blank screen
-//light/dark mode
+//X clean mode --blank screen
+//X light/dark mode
 //more array features --more counts
-//style side bar better
+//X style side bar better
 //add font-align
 //add save feature
-//save settings
-//add change background color, make sure you add it to the entire body as well as the teaxt area and app area. 
+//X add change background color, make sure you add it to the entire body as well as the teaxt area and app area. 
 
+alert('Hover mouse over right side of screen to see more menu options')
 
 
 let documentText = document.querySelector("textarea");
@@ -141,5 +141,7 @@ document.querySelector(".light_mode").addEventListener('click', () => {
   appTitle.classList.toggle("app_title_light")
   
 });
+
+
 
 //colors fly past with a coat of dark
